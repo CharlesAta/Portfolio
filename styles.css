@@ -90,3 +90,44 @@ nav {
     align-items: center;
   }
 }
+
+.output {
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+  color: black;
+}
+
+.output h3 {
+  font-size: 20px;
+}
+
+/* Cursor Styling */
+
+.cursor::after {
+  content: "";
+  display: inline-block;
+  margin-left: 3px;
+  background-color: grey;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+h3.cursor::after {
+  height: 20px;
+  width: 13px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
