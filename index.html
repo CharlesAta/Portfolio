@@ -5,36 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./main.js"></script>
     <title>Charles Ata</title>
   </head>
   <body>
-    <nav>
-      <a href="#about"><i class="fa fa-user"></i></a>
-      <a href="#projects"><i class="fa fa-briefcase"></i></a>
-      <a href="#skills"><i class="fa fa-file"></i></a>
-      <a href="#contact"><i class="fa fa-address-card"></i></a>
-    </nav>
+    <main class="page">
+      <nav>
+        <ul>
+          <li id="main-link"><i class="fab fa-cuttlefish"></i></li>
+          <li id="about-link"><i class="fa fa-user"></i></li>
+          <li id="projects-link"><i class="fa fa-briefcase"></i></li>
+          <li id="skills-link"><i class="fa fa-file"></i></li>
+          <li id="contact-link"><i class="fa fa-address-card"></i></li>
+        </ul>
+      </nav>
 
-    <div class="container">
-      <section id="about">
-        <h1>About</h1>
-      </section>
+      <div class="container">
+        <section id="main" class="info">
+          <h1>charles Ata</h1>
+        </section>
 
-      <section id="projects">
-        <h1>Projects</h1>
-      </section>
+        <section id="about" class="info">
+          <h1>About</h1>
+          <p>
+            I’m a Software Developer with a background as an Electrical Engineer
+            within the nuclear, automotive, and utility industries.
+          </p>
+          <br />
+          <p>
+            My venture into software engineering began with a spark of curiosity
+            into emerging technologies. Motivated by my passion for
+            self-improvement, and building great things, I was inspired to learn
+            more about the capabilities and advancements of software development
+            to strategically and creatively solve problems.
+          </p>
+          <br />
+          <p>
+            Able to think outside the box and apply different perspectives, I
+            aspire to impact the unknown through my work. Making people say “I
+            didn’t even know I needed this” - whether it be building upon past
+            concepts or new ones, the challenge is something I do not shy away
+            from.
+          </p>
+        </section>
 
-      <section id="skills">
-        <h1>Skills</h1>
-      </section>
+        <section id="projects" class="info">
+          <h1>Projects</h1>
+        </section>
 
-      <section id="contact">
-        <h1>Contact</h1>
-      </section>
-    </div>
+        <section id="skills" class="info">
+          <h1>Skills</h1>
+        </section>
+
+        <section id="contact" class="info">
+          <h1>Contact</h1>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
