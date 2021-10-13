@@ -7,22 +7,19 @@ body {
 main {
   display: flex;
   flex-direction: row;
+  position: absolute;
+  z-index: 1;
 }
 
 :root {
-  --about-color: #5f4e4e;
   --nav-color: #c3f788;
-  --projects-color: #88bfb5;
-  --skills-color: #f2e527;
-  --contact-color: #d2a9d9;
 }
 
 .container {
   position: relative;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.548);
   min-height: 100vh;
   font-family: Montserrat, sans-serif;
-  /* width: 10%; */
 }
 
 nav ul li {
@@ -31,6 +28,7 @@ nav ul li {
   text-decoration: none;
   padding: 20px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 nav ul {
@@ -50,50 +48,25 @@ nav {
   background: var(--nav-color);
 }
 
+.profile-pic {
+  border-radius: 50%;
+  max-width: 30%;
+  min-width: 15em;
+  height: auto;
+}
+
 .info {
-  /* position: absolute; */
-  /* top: 0; */
   height: 100vh;
-  /* width: 0; */
-  /* opacity: 0; */
-  /* transition: all ease-in 0.5s; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2%;
 }
-/*
-.info h1 {
-  color: #fff;
-  font-size: 50px;
-  text-transform: uppercase;
-  opacity: 0;
-} */
-
-@media screen and (max-width: 800px) {
-  nav {
-    position: fixed;
-    left: 0;
-    z-index: 50;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    width: 100vw;
-    height: 10vh;
-    background: var(--nav-color);
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-}
 
 .output {
   text-align: center;
-  font-family: "Source Code Pro", monospace;
+  font-family: "Quicksand", monospace;
   color: black;
 }
 
@@ -129,5 +102,45 @@ h3.cursor::after {
   }
   100% {
     opacity: 0;
+  }
+}
+
+.intro-name {
+  margin-bottom: 0;
+}
+
+canvas {
+  position: fixed;
+  z-index: 0.1;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    position: fixed;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100vw;
+    height: 10vh;
+    background: var(--nav-color);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  nav ul li {
+    font-size: 30px;
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
   }
 }
