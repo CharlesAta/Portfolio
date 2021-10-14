@@ -650,5 +650,8 @@ canvas {
       left: 20px !important; }
     .card:hover button {
       transform: scale(8.5) !important; } }
+@media screen and (max-width: 350px) {
+  section > h1 {
+    text-align: center; } }
 
 /*# sourceMappingURL=styles.css.map */
