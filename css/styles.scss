@@ -787,6 +787,12 @@ $img-url4: "https://www.sandyspringmuseum.org/wp-content/uploads/2018/07/magicca
   cursor: pointer;
 }
 
+#logo-icon {
+  width: 300px;
+  height: auto;
+  border-radius: 50%;
+}
+
 @media screen and (min-width: 400px) and (max-width: 660px) {
   .direction-l .desc,
   .direction-r .desc {
@@ -879,5 +885,11 @@ $img-url4: "https://www.sandyspringmuseum.org/wp-content/uploads/2018/07/magicca
 @media screen and (max-width: 350px) {
   section > h1 {
     text-align: center;
+  }
+
+  #logo-icon {
+    width: 280px;
+    height: auto;
+    border-radius: 50%;
   }
 }

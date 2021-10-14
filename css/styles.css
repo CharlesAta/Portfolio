@@ -589,6 +589,11 @@ canvas {
   border-radius: 50%;
   cursor: pointer; }
 
+#logo-icon {
+  width: 300px;
+  height: auto;
+  border-radius: 50%; }
+
 @media screen and (min-width: 400px) and (max-width: 660px) {
   .direction-l .desc,
   .direction-r .desc {
@@ -651,6 +656,11 @@ canvas {
       transform: scale(8.5) !important; } }
 @media screen and (max-width: 350px) {
   section > h1 {
-    text-align: center; } }
+    text-align: center; }
+
+  #logo-icon {
+    width: 280px;
+    height: auto;
+    border-radius: 50%; } }
 
 /*# sourceMappingURL=styles.css.map */
