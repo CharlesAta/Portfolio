@@ -14,6 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="./js/main.js"></script>
     <title>Charles Ata</title>
@@ -52,12 +57,12 @@
         </section>
 
         <section id="about" class="info">
-          <h1>About</h1>
+          <h1>So who the heck is Charles?</h1>
+          <br />
           <p>
             I’m a Software Developer with a background as an Electrical Engineer
             within the nuclear, automotive, and utility industries.
           </p>
-          <br />
           <p>
             My venture into software engineering began with a spark of curiosity
             into emerging technologies. Motivated by my passion for
@@ -65,7 +70,6 @@
             more about the capabilities and advancements of software development
             to strategically and creatively solve problems.
           </p>
-          <br />
           <p>
             Able to think outside the box and apply different perspectives, I
             aspire to impact the unknown through my work. Making people say “I
@@ -73,18 +77,297 @@
             concepts or new ones, the challenge is something I do not shy away
             from.
           </p>
+
+          <p>
+            I am ambitious and adventurous, having travelled to three continents
+            in 2019 exploring my hobby in photography and videography. A few
+            other passions of mine include: living a healthy lifestyle through
+            fitness, playing soccer, snowboarding, trying new foods, learning
+            new things, seeing new places, and meeting new people.
+          </p>
+          <p>
+            For a glimpse into the places I've been and people I've met,
+            <span id="show-pics">click here</span>
+          </p>
+
+          <section id="images-container" style="display: none" class="info">
+            <img
+              id="image1"
+              src="./assets/Peru.jpg"
+              alt="women in Peru"
+              class="images-sizing"
+            />
+
+            <img
+              id="image2"
+              src="./assets/japan2.png"
+              alt="shrine in kyoto"
+              class="images-sizing"
+            />
+
+            <img
+              id="image3"
+              src="./assets/japan.jpg"
+              alt="child in front of fountain"
+              class="images-sizing"
+            />
+
+            <img
+              id="image4"
+              src="./assets/portugal.jpg"
+              alt="boardwalk in Cascais, Portugal"
+              class="images-sizing"
+            />
+          </section>
         </section>
 
         <section id="projects" class="info">
-          <h1>Projects</h1>
+          <h1>What has Charles been up to?</h1>
+          <div class="options-border">
+            <h3 id="projects-button" class="projects-options inactive-option">
+              Projects
+            </h3>
+          </div>
+          <div
+            id="projects-container"
+            class="cards-container"
+            style="display: none"
+          >
+            <div class="card">
+              <h2>Paway</h2>
+              <i class="fas fa-arrow-right"></i>
+              <p>find and report lost pets.</p>
+              <div class="pic"></div>
+
+              <div class="social">
+                <a href="https://paway.herokuapp.com/" target="_blank"
+                  ><i class="fas fa-link"></i
+                ></a>
+                <a
+                  href="https://github.com/klynnyang/pet-tracker"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <a href="https://paway.herokuapp.com/" target="_blank"
+                ><button></button
+              ></a>
+            </div>
+            <div class="card card2">
+              <h2>Workoutify</h2>
+              <i class="fas fa-arrow-right"></i>
+              <p>keep track of workouts.</p>
+              <div class="pic"></div>
+
+              <div class="social">
+                <a href="http://workoutify.herokuapp.com/" target="_blank"
+                  ><i class="fas fa-link"></i
+                ></a>
+                <a
+                  href="https://github.com/CharlesAta/Workoutify"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <a href="http://workoutify.herokuapp.com/" target="_blank"
+                ><button></button
+              ></a>
+            </div>
+            <div class="card card3">
+              <h2>NeedSomeSpace</h2>
+              <i class="fas fa-arrow-right"></i>
+              <p>talk space & tech.</p>
+              <div class="pic"></div>
+
+              <div class="social">
+                <a href="https://needsomespace.herokuapp.com/" target="_blank"
+                  ><i class="fas fa-link"></i
+                ></a>
+                <a
+                  href="https://github.com/CharlesAta/Need-some-space"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <a href="https://needsomespace.herokuapp.com/" target="_blank"
+                ><button></button
+              ></a>
+            </div>
+
+            <div class="card card4">
+              <h2>Blackjack</h2>
+              <i class="fas fa-arrow-right"></i>
+              <p>play to win.</p>
+              <div class="pic"></div>
+
+              <div class="social">
+                <a
+                  href="https://charlesata.github.io/Blackjack/"
+                  target="_blank"
+                  ><i class="fas fa-link"></i
+                ></a>
+                <a
+                  href="https://github.com/CharlesAta/Blackjack"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <a href="https://charlesata.github.io/Blackjack/" target="_blank"
+                ><button></button
+              ></a>
+            </div>
+          </div>
+
+          <div class="options-border">
+            <h3 id="timeline-button" class="projects-options inactive-option">
+              Experience
+            </h3>
+          </div>
+          <div id="projects-timeline" style="display: none">
+            <ul class="timeline">
+              <li>
+                <div class="direction-r">
+                  <div class="flag-wrapper">
+                    <span class="flag">Prospective Dev.</span>
+                    <span class="time-wrapper"
+                      ><span class="time">Sept 2021 - Present</span></span
+                    >
+                  </div>
+                  <div class="desc">
+                    On the hunt for my next opportunity to grow and develop my
+                    career in software development. Continuing to learn, build,
+                    and explore along the way.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="direction-l">
+                  <div class="flag-wrapper">
+                    <span class="flag">General Assembly</span>
+                    <span class="time-wrapper"
+                      ><span class="time">Jul 2021 - Sept 2021</span></span
+                    >
+                  </div>
+                  <div class="desc">
+                    General Assembly's Software Engineering Immersive
+                    Certificate Program - 480+ hours spent learning and applying
+                    Front-end, Back-end, and Full-stack development.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="direction-r">
+                  <div class="flag-wrapper">
+                    <span class="flag">Self-Teaching</span>
+                    <span class="time-wrapper"
+                      ><span class="time">Jan 2021 - Jul 2021</span></span
+                    >
+                  </div>
+                  <div class="desc">
+                    Prior to attending General Assembly's Software Engineering
+                    program, I spent this time completing multiple online
+                    courses and certifications to build my foundation in
+                    software. From Google's IT Automation Cert, to Harvard X's
+                    Computer Science for Artificial Intelligence Professional
+                    Certificate.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="direction-l">
+                  <div class="flag-wrapper">
+                    <span class="flag">Tetra Tech</span>
+                    <span class="time-wrapper"
+                      ><span class="time">2020 - 2021</span></span
+                    >
+                  </div>
+                  <div class="desc">
+                    Worked on 3 major projects during my time at TT as an
+                    Electrical Design Engineer.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="direction-r">
+                  <div class="flag-wrapper">
+                    <span class="flag">Freelance</span>
+                    <span class="time-wrapper"
+                      ><span class="time">2018 - 2019</span></span
+                    >
+                  </div>
+                  <div class="desc">
+                    Travelled and did freelance photography for models abroad.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="direction-l">
+                  <div class="flag-wrapper">
+                    <span class="flag">Honda of Canada Mfg.</span>
+                    <span class="time-wrapper"
+                      ><span class="time">2017 - 2018</span></span
+                    >
+                  </div>
+                  <div class="desc">
+                    As a Project Engineer at Honda, I had the opportunity to
+                    perform a risk-assessment for one of Honda's largest
+                    initatives.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="direction-r">
+                  <div class="flag-wrapper">
+                    <span class="flag">UOIT</span>
+                    <span class="time-wrapper"
+                      ><span class="time">2012 - 2017</span></span
+                    >
+                  </div>
+                  <div class="desc">
+                    While attending the University of Ontario Insitute of
+                    Technology, I was awarded Dean's List all academic years,
+                    succesfully built a Smart Home Controller prototype while
+                    completing my Bachelor's of Engineering in Electrical
+                    Engineering.
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="direction-l">
+                  <div class="flag-wrapper">
+                    <span class="flag">Alectra Utilities</span>
+                    <span class="time-wrapper"
+                      ><span class="time">2015 - 2016</span></span
+                    >
+                  </div>
+                  <div class="desc">
+                    During my time at Alectra, I was responsible for
+                    maintaining, priortizing and analyzing utility equipment
+                    while a Reliablity Engineer Intern.
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section id="skills" class="info">
-          <h1>Skills</h1>
+          <h1>What is Charles good at?</h1>
+          <h2>Proficient in</h2>
+          <h4>Dabbled with</h4>
+          <div class="options-border">
+            <a id="resume" href="./assets/CharlesAtaCV.pdf" download
+              ><h5 class="projects-options">Download Resume</h5></a
+            >
+          </div>
         </section>
 
         <section id="contact" class="info">
-          <h1>Contact</h1>
+          <h1>How to reach Charles?</h1>
         </section>
       </div>
     </main>

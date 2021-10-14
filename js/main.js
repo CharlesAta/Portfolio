@@ -1,3 +1,5 @@
+////////////////////// functions for Nav Bar //////////////////////
+
 $("#main-link").click(function() {
     $('html, body').animate({
         scrollTop: $("#main").offset().top
@@ -28,8 +30,10 @@ $("#contact-link").click(function() {
         scrollTop: $("#contact").offset().top
     }, 1000);
 });
+////////////////////// functions for Nav Bar //////////////////////
 
 
+////////////////////// functions for typewriter //////////////////////
 
 // values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
 var i = 0,
@@ -124,9 +128,11 @@ function typeWriter(id, ar) {
     }
   }
 }
+////////////////////// functions for typewriter //////////////////////
 
 
 
+////////////////////// functions for lavalamp background //////////////////////
 
 window.lavaAnimation = (function() {
     "use strict";
@@ -384,4 +390,63 @@ window.lavaAnimation = (function() {
   setTimeout(function() {
     $(".js-works-d-list").addClass("is-loaded");
   }, 150);
+  ////////////////////// functions for lavalamp background //////////////////////
+
+
+  ////////////////////// functions for show images on click //////////////////////
   
+  $("#show-pics").click(function() {
+    $('#images-container').toggle(1000, "linear", function () {
+
+      if ($(this).is(":visible")){
+        $('html, body').animate({
+          scrollTop: $("#images-container").offset().top
+      }, 800);
+      } else {
+        $('html, body').animate({
+          scrollTop: $("#about").offset().top
+      }, 500);
+      }
+    })
+});
+  ////////////////////// functions for show images on click //////////////////////
+  
+
+      ////////////////////// functions for show projects on click //////////////////////
+      $("#projects-button").click(function() {
+        $('#projects-container').slideToggle(1000, function () {
+    
+          if ($(this).is(":visible")){
+            $("#projects-button").removeClass("inactive-option").addClass("active-option")
+            $('html, body').animate({
+              scrollTop: $("#projects-container").offset().top
+          }, 800);
+          } else {
+            $("#projects-button").removeClass("active-option").addClass("inactive-option")
+            $('html, body').animate({
+              scrollTop: $("#projects").offset().top
+          }, 500);
+          }
+        })
+    });
+        ////////////////////// functions for show projects on click //////////////////////
+
+
+    ////////////////////// functions for show experiences on click //////////////////////
+  $("#timeline-button").click(function() {
+    $('#projects-timeline').slideToggle(1000, function () {
+
+      if ($(this).is(":visible")){
+        $("#timeline-button").removeClass("inactive-option").addClass("active-option")
+        $('html, body').animate({
+          scrollTop: $("#projects-timeline").offset().top
+      }, 800);
+      } else {
+        $("#timeline-button").removeClass("active-option").addClass("inactive-option")
+        $('html, body').animate({
+          scrollTop: $("#projects").offset().top
+      }, 500);
+      }
+    })
+});
+    ////////////////////// functions for show experiences on click //////////////////////
