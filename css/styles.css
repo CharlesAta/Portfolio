@@ -595,6 +595,12 @@ canvas {
   height: auto;
   border-radius: 50%; }
 
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 8px;
+  margin-bottom: 5px; }
+
 @media screen and (min-width: 400px) and (max-width: 660px) {
   .direction-l .desc,
   .direction-r .desc {
