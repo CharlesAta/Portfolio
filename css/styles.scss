@@ -231,8 +231,8 @@ canvas {
 
 .timeline {
   position: relative;
-  width: 660px;
-  margin: 0 auto;
+  width: 860px;
+  margin: 0 auto; 
   margin-top: 20px;
   padding: 1em 0;
   list-style-type: none;
@@ -308,14 +308,14 @@ canvas {
 
 .direction-l {
   position: relative;
-  width: 300px;
+  width: 400px;
   float: left;
   text-align: right;
 }
 
 .direction-r {
   position: relative;
-  width: 300px;
+  width: 400px;
   float: right;
 }
 
@@ -437,7 +437,7 @@ canvas {
 
 /* ================ Timeline Media Queries ================ */
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 1000px) {
   .timeline {
     width: 100%;
     padding: 4em 0 1em 0;
@@ -727,6 +727,10 @@ $img-url4: "https://www.sandyspringmuseum.org/wp-content/uploads/2018/07/magicca
   text-decoration: none;
 }
 
+#resume-button {
+  margin-top: 40px;
+}
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -756,25 +760,29 @@ $img-url4: "https://www.sandyspringmuseum.org/wp-content/uploads/2018/07/magicca
   align-items: center;
   margin-right: 25px;
   margin-top: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .proficiencies {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 15px;
   flex-wrap: wrap;
+  max-width: 90%;
 }
 .home-text {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .proficient-text {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .dabble-text {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .proficient-title {
