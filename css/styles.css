@@ -768,6 +768,7 @@ canvas {
           align-items: center;
   margin-right: 25px;
   margin-top: 10px;
+  justify-content: flex-end;
 }
 
 .icon-position:last-child {
